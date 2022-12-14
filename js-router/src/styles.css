@@ -1,0 +1,27 @@
+@import "./reset.css";
+
+.h1_white {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+}
+
+.container_dark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(50, 50, 50);
+}
+
+.button_dark {
+  padding: 15px 25px;
+  background-color: black;
+  border-radius: 15px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}

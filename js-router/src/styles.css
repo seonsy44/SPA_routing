@@ -20,8 +20,9 @@
 .button_dark {
   padding: 15px 25px;
   background-color: black;
+  border: none;
   border-radius: 15px;
   font-size: 20px;
   color: white;
-  text-decoration: none;
+  cursor: pointer;
 }

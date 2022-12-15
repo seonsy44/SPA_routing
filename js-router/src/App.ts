@@ -1,5 +1,6 @@
 import HomePage from "./pages/Home";
 import AboutPage from "./pages/About";
+import { init } from "./router";
 import "./styles.css";
 
 type Props = {
@@ -20,6 +21,8 @@ export default function App(this: AppType, { $target }: Props) {
     else if (pathname === "/about")
       new (AboutPage as any)({ $target }).render();
   };
+
+  init(this.route);
 
   this.route();
 }

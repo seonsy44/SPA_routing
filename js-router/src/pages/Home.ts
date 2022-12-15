@@ -1,3 +1,5 @@
+import { routeChange } from "../router";
+
 type Props = {
   $target: HTMLElement;
 };
@@ -13,10 +15,15 @@ export default function HomePage(this: HomeType, { $target }: Props) {
   $page.innerHTML = `
     <main class='container_dark'>
         <h1 class='h1_white'>HOME</h1>
-        <a href='/about' class='button_dark'>Go About</a>
+        <button class='button_dark'>Go About</button>
     </main>`;
 
   this.render = () => {
     $target.appendChild($page);
   };
+
+  const $button = $page.querySelector("button");
+  $button?.addEventListener("click", () => {
+    routeChange("/about");
+  });
 }
